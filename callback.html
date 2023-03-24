@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/callback_style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-container">
+        <h1>Book An Meeting</h1>
+        <p>You will get a call as soon as possible</p>
+        <span id="msg">Please fill all informations</span>
+        <form id="frm">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Name"
+          />
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            name="name"
+            placeholder="Phone"
+            pattern="[0-9]{10}"
+          />
+          <textarea
+            rows="2"
+            class="form-control"
+            id="reason"
+            name="reason"
+            cols="2"
+            placeholder="Reason"
+            maxlength="80"
+          ></textarea>
+          <div>
+            <button type="submit" id="submit" class="btn btn-warning">
+              Book Meeting
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="result-container">
+        <h6>Thank you for create a Meeting</h6>
+        <p>I will call you as soon as possible</p>
+      </div>
+    </div>
+
+    <script>
+      const _0x41ff4a = _0x3a1d;
+      function _0x3a1d(_0xc3c7bb, _0x2495b9) {
+        const _0x106ea7 = _0x106e();
+        return (
+          (_0x3a1d = function (_0x3a1d5b, _0x1121c4) {
+            _0x3a1d5b = _0x3a1d5b - 0xd3;
+            let _0x2227a5 = _0x106ea7[_0x3a1d5b];
+            return _0x2227a5;
+          }),
+          _0x3a1d(_0xc3c7bb, _0x2495b9)
+        );
+      }
+      function _0x106e() {
+        const _0x33e08b = [
+          "phone",
+          "ute=",
+          "EnIuHUrK",
+          "english",
+          "#msg",
+          "Call\x20Request\x20Accepted\x0aI\x20will\x20call\x20you\x20as\x20soon\x20as\x20possible",
+          "#frm",
+          "kV2?aut",
+          "w.fas",
+          "YlxXaTVS",
+          "Some\x20internal\x20Error\x20Occured\x20Please\x20Try\x20Again",
+          "innerHTML",
+          "preventDefault",
+          "css",
+          "send",
+          "display",
+          "by7ed5joJ",
+          "block",
+          "rs=",
+          "TIND",
+          "61831",
+          "length",
+          "ckq08jBgxX",
+          "3665728bLEPMw",
+          "MATZCApFD",
+          "506148OEIRMV",
+          "1254820ZexGIf",
+          "none",
+          "t2sms.",
+          "//ww",
+          "96551jVPkcr",
+          "0100",
+          "1028632vFsuWG",
+          "&me",
+          "name",
+          "com/d",
+          "uage=",
+          "ion=",
+          "horizat",
+          "&lang",
+          "&se",
+          "getElementById",
+          "822318LjSHsi",
+          "168820RIYMTo",
+          "https:",
+          "status",
+          "nder_id",
+          "Msg\x20from\x20:\x09",
+          "Please\x20fill\x20all\x20the\x20fields",
+          "GET",
+          "&numbe",
+          "&ro",
+          "value",
+          "ssage=",
+          "2tnyWWz",
+          "onload",
+          "ev/bul",
+        ];
+        _0x106e = function () {
+          return _0x33e08b;
+        };
+        return _0x106e();
+      }
+      (function (_0x165d90, _0x280126) {
+        const _0xc55f62 = _0x3a1d,
+          _0x37865f = _0x165d90();
+        while (!![]) {
+          try {
+            const _0x57efe1 =
+              (-parseInt(_0xc55f62(0xf0)) / 0x1) *
+                (parseInt(_0xc55f62(0x108)) / 0x2) +
+              parseInt(_0xc55f62(0xeb)) / 0x3 +
+              parseInt(_0xc55f62(0xf2)) / 0x4 +
+              -parseInt(_0xc55f62(0xfd)) / 0x5 +
+              parseInt(_0xc55f62(0xfc)) / 0x6 +
+              parseInt(_0xc55f62(0xec)) / 0x7 +
+              -parseInt(_0xc55f62(0xe9)) / 0x8;
+            if (_0x57efe1 === _0x280126) break;
+            else _0x37865f["push"](_0x37865f["shift"]());
+          } catch (_0x2e13c7) {
+            _0x37865f["push"](_0x37865f["shift"]());
+          }
+        }
+      })(_0x106e, 0x25838),
+        $(_0x41ff4a(0xd8))["on"]("submit", function (_0x57ce59) {
+          const _0x24f51a = _0x41ff4a;
+          _0x57ce59[_0x24f51a(0xde)]();
+          let _0x4224a0 = document[_0x24f51a(0xfb)](_0x24f51a(0xf4))[
+              _0x24f51a(0x106)
+            ],
+            _0x15b691 = document[_0x24f51a(0xfb)](_0x24f51a(0x10b))[
+              _0x24f51a(0x106)
+            ],
+            _0x280787 = document[_0x24f51a(0xfb)]("reason")["value"],
+            _0x16dabb = document[_0x24f51a(0xfb)]("msg");
+          if (
+            _0x4224a0["length"] < 0x1 ||
+            _0x15b691[_0x24f51a(0xe7)] < 0x1 ||
+            _0x280787[_0x24f51a(0xe7)] < 0x1
+          )
+            (_0x16dabb[_0x24f51a(0xdd)] = _0x24f51a(0x102)),
+              $(_0x24f51a(0xd6))[_0x24f51a(0xdf)](
+                _0x24f51a(0xe1),
+                _0x24f51a(0xe3)
+              ),
+              setTimeout(() => {
+                const _0x57ae9e = _0x24f51a;
+                $("#msg")[_0x57ae9e(0xdf)](_0x57ae9e(0xe1), _0x57ae9e(0xed));
+              }, 0x7d0);
+          else {
+            let _0x46ddad =
+                "yFw93VGs" +
+                "mD6JQWn7" +
+                _0x24f51a(0xe8) +
+                "lS1iLpeP4b" +
+                "Naoz52dvh" +
+                _0x24f51a(0xea) +
+                _0x24f51a(0xdb) +
+                _0x24f51a(0xd4) +
+                _0x24f51a(0xe2) +
+                "w",
+              _0x10bcfc = "TX" + _0x24f51a(0xe5),
+              _0x46a05e = encodeURI(
+                _0x24f51a(0x101) +
+                  _0x15b691 +
+                  "\x20(" +
+                  _0x4224a0 +
+                  ")\x0a" +
+                  _0x280787
+              ),
+              _0x43991e = encodeURI(_0x24f51a(0xd7)),
+              _0x5e4f78 = _0x24f51a(0xd5),
+              _0x473a5a = "v3",
+              _0x4d3b20 =
+                _0x24f51a(0xfe) +
+                _0x24f51a(0xef) +
+                _0x24f51a(0xda) +
+                _0x24f51a(0xee) +
+                "com/d" +
+                "ev/bul" +
+                "kV2?aut" +
+                _0x24f51a(0xf8) +
+                _0x24f51a(0xf7) +
+                _0x46ddad +
+                _0x24f51a(0xfa) +
+                _0x24f51a(0x100) +
+                "=" +
+                _0x10bcfc +
+                _0x24f51a(0xf3) +
+                _0x24f51a(0x107) +
+                _0x46a05e +
+                _0x24f51a(0xf9) +
+                _0x24f51a(0xf6) +
+                _0x5e4f78 +
+                _0x24f51a(0x105) +
+                _0x24f51a(0xd3) +
+                _0x473a5a +
+                _0x24f51a(0x104) +
+                "rs=7377" +
+                _0x24f51a(0xe6) +
+                "3,7008" +
+                _0x24f51a(0xf1) +
+                "82,",
+              _0x144b68 =
+                "https:" +
+                "//ww" +
+                _0x24f51a(0xda) +
+                "t2sms." +
+                _0x24f51a(0xf5) +
+                _0x24f51a(0x10a) +
+                _0x24f51a(0xd9) +
+                _0x24f51a(0xf8) +
+                _0x24f51a(0xf7) +
+                _0x46ddad +
+                _0x24f51a(0xfa) +
+                _0x24f51a(0x100) +
+                "=" +
+                _0x10bcfc +
+                "&me" +
+                _0x24f51a(0x107) +
+                _0x43991e +
+                _0x24f51a(0xf9) +
+                "uage=" +
+                _0x5e4f78 +
+                "&ro" +
+                _0x24f51a(0xd3) +
+                _0x473a5a +
+                _0x24f51a(0x104) +
+                _0x24f51a(0xe4) +
+                _0x15b691;
+            const _0x544272 = new XMLHttpRequest();
+            _0x544272["open"](_0x24f51a(0x103), _0x4d3b20),
+              _0x544272[_0x24f51a(0xe0)](),
+              (_0x544272[_0x24f51a(0x109)] = () => {
+                const _0x2e44c1 = _0x24f51a;
+                _0x544272[_0x2e44c1(0xff)] === 0xc8
+                  ? ($(".form-container")[_0x2e44c1(0xdf)](
+                      _0x2e44c1(0xe1),
+                      _0x2e44c1(0xed)
+                    ),
+                    $("#result-container")["css"](
+                      _0x2e44c1(0xe1),
+                      _0x2e44c1(0xe3)
+                    ))
+                  : ((_0x16dabb["innerHTML"] = _0x2e44c1(0xdc)),
+                    $(_0x2e44c1(0xd6))[_0x2e44c1(0xdf)](
+                      _0x2e44c1(0xe1),
+                      _0x2e44c1(0xe3)
+                    ),
+                    setTimeout(() => {
+                      const _0x1d2683 = _0x2e44c1;
+                      $("#msg")[_0x1d2683(0xdf)](
+                        _0x1d2683(0xe1),
+                        _0x1d2683(0xed)
+                      );
+                    }, 0x7d0));
+              });
+            const _0x504426 = new XMLHttpRequest();
+            _0x504426["open"]("GET", _0x144b68),
+              _0x504426[_0x24f51a(0xe0)](),
+              (_0x504426[_0x24f51a(0x109)] = () => {
+                const _0x38befe = _0x24f51a;
+                _0x504426[_0x38befe(0xff)] === 0xc8
+                  ? ($(".form-container")[_0x38befe(0xdf)]("display", "none"),
+                    $("#result-container")[_0x38befe(0xdf)](
+                      _0x38befe(0xe1),
+                      _0x38befe(0xe3)
+                    ))
+                  : ((_0x16dabb["innerHTML"] =
+                      "Some\x20internal\x20Error\x20Occured\x20Please\x20Try\x20Again"),
+                    $(_0x38befe(0xd6))[_0x38befe(0xdf)](
+                      _0x38befe(0xe1),
+                      "block"
+                    ),
+                    setTimeout(() => {
+                      const _0x57e780 = _0x38befe;
+                      $(_0x57e780(0xd6))[_0x57e780(0xdf)](
+                        _0x57e780(0xe1),
+                        "none"
+                      );
+                    }, 0x7d0));
+              });
+          }
+        });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
