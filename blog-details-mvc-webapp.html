@@ -19,6 +19,12 @@
     <link rel="icon" type="image/png" href="assets/img/small_p.png" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+
+      @media(max-width: 800px){
+            #videoHolder{
+              height: 300px;
+            }
+        }
     </style>
   </head>
 
@@ -246,6 +252,7 @@
                       src="https://www.youtube.com/embed/G3ZSsoIRgvM"
                       title="YouTube video player"
                       frameborder="0"
+                      id="videoHolder"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
                     ></iframe>
