@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/dark-theme.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <title>Projects</title>
+    <title>Power Of MVC</title>
     <link rel="icon" type="image/png" href="assets/img/small_p.png" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
@@ -23,6 +23,9 @@
       @media (max-width: 800px) {
         #videoHolder {
           height: 300px;
+        }
+        #mvcImage img{
+          width: 100%;
         }
       }
     </style>
@@ -146,7 +149,7 @@
                     <a href="index.html" class="nav-link"> Home </a>
                   </li>
                   <li class="nav-item">
-                    <a href="projects.html" class="nav-link active">
+                    <a href="projects.html" class="nav-link">
                       Projects
                     </a>
                   </li>
@@ -154,7 +157,7 @@
                     <a href="about.html" class="nav-link"> About Me </a>
                   </li>
                   <li class="nav-item">
-                    <a href="blog.html" class="nav-link"> Blog </a>
+                    <a href="blog.html" class="nav-link active"> Blog </a>
                   </li>
                   <li class="nav-item">
                     <a href="contact.html" class="nav-link">Contact</a>
@@ -211,7 +214,7 @@
             <div class="row align-items-center">
               <div class="col-lg-7 col-md-8 col-sm-8">
                 <div class="breadcrumb-title">
-                  <h2>MVC Architecture Based Web Application</h2>
+                  <h2>MVC Based Web Application Development</h2>
                   <ul class="breadcrumb-menu list-style">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -353,6 +356,9 @@
                           browser, which renders the data into an HTML file for
                           display to the end user."
                         </p>
+                        <div style="text-align: center;" id="mvcImage">
+                          <img src="mvc.png" alt="Image" width="70%"/>
+                        </div>
                         <h6>Work-Flow on MVC Architecture</h6>
                       </div>
                     </blockquote>
@@ -364,22 +370,28 @@
                       and controller. This separation also enhances code
                       reusability and testability.
                     </p>
-                    <h3>Principles Related To Human Capital</h3>
+                    <h3>Folder Structure You Have To Follow</h3>
                     <ol>
                       <li>
-                        Mauris ut in vestibulum hasellus ultrices fusce nibh
-                        justo, venenatis, amet. Lectus quam.
+                        You have to follow this Folder Structrure, like you have
+                        to put controller classes inside
+                        <strong>controller Package</strong>, DataBase related
+                        classes inside <strong>dao Package</strong>, Services
+                        related classes inside <strong>service Package</strong>.
                       </li>
                       <li>
-                        Consectetur phasellus <strong>ultrices</strong> fusce
-                        nibh justo, venenatis, amet. Lectus quam.
+                        Take All Dao and Service classes as
+                        <strong>Interfaces</strong> and take the corresponding
+                        implementaion classes inside
+                        <strong>dao.impl and service.impl package</strong>.
                       </li>
                       <li>
-                        Lectus quam there are two thing is very important in
-                        Consectetur phasellus ultrices fusce.
+                        To follow Abstraction, create an <strong>Application</strong> class that
+                        contains static methods to return objects of the dao and service
+                        implementation classes to the conroller or service class. (eg. DriverManager.getConnection(String url) method)
                       </li>
                     </ol>
-                    <h3>How Do Credit Cards Work</h3>
+                    <!-- <h3>How Do Credit Cards Work</h3>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Laboriosam in culpa dolorem. Eos sint aut suscipit.
@@ -412,7 +424,7 @@
                       ex ea commodo consequat. Duis aute irure dolor in
                       reprehenderit in <a href="index.html">sed</a> uia non
                       numquam eius modi tempora incidunt ut labore dolor.
-                    </p>
+                    </p> -->
                   </div>
                 </article>
                 <div class="post-author">
