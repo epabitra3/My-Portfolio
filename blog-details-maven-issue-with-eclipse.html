@@ -16,10 +16,20 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/dark-theme.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
-  <title>Blogs</title>
+  <title>Maven Issue With Eclipse</title>
   <link rel="icon" type="image/png" href="assets/img/small_p.png" />
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+
+    @media (max-width: 800px) {
+      #videoHolder {
+        height: 300px;
+      }
+
+      #mvcImage img {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -120,7 +130,9 @@
                   <a href="index.html" class="nav-link"> Home </a>
                 </li>
                 <li class="nav-item">
-                  <a href="projects.html" class="nav-link"> Projects </a>
+                  <a href="projects.html" class="nav-link">
+                    Projects
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a href="about.html" class="nav-link"> About Me </a>
@@ -167,10 +179,11 @@
           <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-sm-8">
               <div class="breadcrumb-title">
-                <h2>Blog</h2>
+                <h4>NoSuchMethodError while Creating Spring Starter Projects</h4>
                 <ul class="breadcrumb-menu list-style">
-                  <li><a href="index.html">Home </a></li>
-                  <li>Blog</li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li>Description</li>
                 </ul>
               </div>
             </div>
@@ -178,7 +191,8 @@
               <div class="breadcrumb-img">
                 <img src="assets/img/breadcrumb/br-shape-5.png" alt="Image" class="br-shape-five animationFramesTwo" />
                 <img src="assets/img/breadcrumb/br-shape-6.png" alt="Image" class="br-shape-six bounce" />
-                <img src="assets/img/breadcrumb/blog-banner-image.webp" alt="Image" />
+                <!-- We have to change this Image for Right side view -->
+                <img src="assets/img/Uploads/mavenErrorWithEclipseVersionWithDescription.jpg" alt="Image" />
               </div>
             </div>
           </div>
@@ -186,94 +200,168 @@
       </div>
       <!-- Breadcrumb End -->
 
-      <!-- Blog Section Start -->
-      <section class="blog-wrap pt-100 pb-75 bg-albastor">
+      <!-- Blog Details Section Start -->
+      <div class="blog-details-wrap ptb-100">
         <div class="container">
-          <div class="section-title style1 text-center mb-40">
-            <span>My Programming Journey</span>
-            <h2>Solutions For Which I Struggled More</h2>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-xl-4 col-lg-6 col-md-6">
-              <div class="blog-card style1">
-                <div class="blog-img">
-                  <img src="assets/img/Uploads/mavenErrorWithEclipseVersionWithDescription.jpg"
-                    style="width: 500px; height: 250px;" alt="Image">
-                </div>
-                <div class="blog-info">
-
-                  <ul class="blog-metainfo  list-style">
-                    <li><i class="flaticon-user"></i> <a>E Pabitra</a></li>
-                    <li><i class="flaticon-calendar"></i>26 July, 2023</li>
-                  </ul>
-                  <h3><a href="blog-details-maven-issue-with-eclipse.html">NoSuchMethodError while Creating Spring
-                      Starter Projects</a></h3>
-                  <a href="blog-details-maven-issue-with-eclipse.html" class="link style1">Read More
-                    <i class="flaticon-right-arrow"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6">
-              <div class="blog-card style1">
-                <div class="blog-img">
-                  <img src="assets/img/blog/MVC Blog.png" style="width: 500px; height: 250px;" alt="Image">
-                </div>
-                <div class="blog-info">
-
-                  <ul class="blog-metainfo  list-style">
-                    <li><i class="flaticon-user"></i> <a>E Pabitra</a></li>
-                    <li><i class="flaticon-calendar"></i>18 May, 2023</li>
-                  </ul>
-                  <h3><a href="blog-details-mvc-webapp.html">Right Way Of Developing Web Application With MVC
-                      Architecture</a></h3>
-                  <a href="blog-details-mvc-webapp.html" class="link style1">Read More
-                    <i class="flaticon-right-arrow"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6">
-              <div class="blog-card style1">
-                <div class="blog-img">
-                  <img src="assets/img/blog/lapi2.webp" style="width: 500px; height: 250px;" alt="Image">
-                </div>
-                <div class="blog-info">
-                  <ul class="blog-metainfo  list-style">
-                    <li><i class="flaticon-user"></i> <a>E Pabitra</a></li>
-                    <li><i class="flaticon-calendar"></i>04 May, 2023</li>
-                  </ul>
-                  <h3><a href="about.html">Started a new position as Graduate Trainee Engineer at Vidyayug Pvt.Ltd</a>
-                  </h3>
-                  <a href="about.html" class="link style1">Read More
-                    <i class="flaticon-right-arrow"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!--<div class="col-xl-4 col-lg-6 col-md-6" >
-                      <div class="blog-card style1">
-                          <div class="blog-img">
-                              <img src="assets/img/blog/blog-3.jpg" alt="Image">
-                          </div>
-                          <div class="blog-info">
-                              <ul class="blog-metainfo  list-style">
-                                <li><i class="flaticon-user"></i> <a>E Pabitra</a></li>
-                                <li><i class="flaticon-calendar"></i>18 May, 2023</li>
-                              </ul>
-                              <h3><a href="blog-details-right-sidebar.html">The Fedaral Bank Appoints New Director To The Board</a></h3>
-
-                              <a href="blog-details-right-sidebar.html" class="link style1">Read More
-                                  <i class="flaticon-right-arrow"></i>
-                              </a>
-                          </div>
-                      </div>
+          <div class="row gx-5">
+            <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+              <article>
+                <!-- <div class="post-img">
+                    <iframe
+                      width="100%"
+                      height="500px"
+                      src="https://www.youtube.com/embed/G3ZSsoIRgvM"
+                      title="YouTube video player"
+                      frameborder="0"
+                      id="videoHolder"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
                   </div> -->
+                <ul class="post-metainfo list-style">
+                  <li>
+                    <i class="flaticon-user"></i><a>E Pabitra</a>
+                    <!-- TODO href="posts-by-author.html" -->
+                  </li>
+                  <li>
+                    <i class="flaticon-calendar"></i><a>18 May, 2023</a>
+                  </li>
+                  <li><i class="flaticon-bubble-chat"></i>No Comment</li>
+                </ul>
+                <h2 style="word-wrap: break-word;">
+                  NoSuchMethodError: 'void
+                  org.eclipse.m2e.core.project.ResolverConfiguration.setActiveProfiles(java.lang.String)'
+                  java.lang.reflect.InvocationTargetException
+                </h2>
+                <div class="post-para" style="text-align: justify;">
+                  <p>
+                    When attempting to create a Spring Starter Project in Eclipse versions after September 2022, users
+                    may encounter a 'NoSuchMethodError' related to the
+                    'org.eclipse.m2e.core.project.ResolverConfiguration.setActiveProfiles(java.lang.String)' method.
+                    This error is caused by compatibility issues between the Eclipse version and the Spring Starter
+                    Project configuration.
+                  </p>
+                  <p>
+                    In this documentation, we will explore the steps to resolve the 'NoSuchMethodError' and provide a
+                    workaround by using earlier versions of Eclipse that are compatible with Spring Starter Projects.
+                  </p>
+                  <h4 style="color: black;"><b>
+                      Step-by-Step Guide to Resolving the 'NoSuchMethodError' Issue:
+                    </b></h4>
+                  <h6>
+                    1. Backup Your Workspace:
+                  </h6>
+                  <p>
+                    Before proceeding with any changes, it's essential to back up your Eclipse workspace. This
+                    precaution ensures that your projects and configurations are safe in case anything goes wrong during
+                    the process.
+                  </p>
+                  <h6>
+                    2. Remove the Current Eclipse Version:
+                  </h6>
+                  <p>
+                    If you are using a version of Eclipse after September 2022-09 and are experiencing the
+                    'NoSuchMethodError,' consider uninstalling that version.
+                  </p>
+                  <h6>
+                    3. Download an Earlier Version of Eclipse:
+                  </h6>
+                  <p>
+                    Go to the Eclipse official website or another reliable source and download an Eclipse IDE version
+                    that earlier than 2022-09 version.
+                  </p>
+                  <h6>
+                    4. Install the Earlier Version:
+                  </h6>
+                  <p>
+                    Install the downloaded Eclipse version on your system, following the usual installation procedure.
+                  </p>
+                  <h6>
+                    5. Import Workspace Projects:
+                  </h6>
+                  <p>
+                    After installing the earlier Eclipse version, import your workspace projects into this new
+                    installation. The projects should remain intact, and you should be able to continue your development
+                    work seamlessly.
+                  </p>
+                  <h6>
+                    6. Now try to create new Spring Starter Project
+                  </h6>
+                  <p>
+                    Now if you try to create new Spring Starter Project then you won't get any problem with the Earlier
+                    version's of 2022-09 version.
+                  </p>
+                  <!-- <h3>How Do Credit Cards Work</h3>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Laboriosam in culpa dolorem. Eos sint aut suscipit.
+                    </p>
+                    <ul class="content-feature-list style2 list-style mt-15">
+                      <li>
+                        <i class="flaticon-checkbox"></i>
+                        Lorem ipsum dolor, sit amet.
+                      </li>
+                      <li>
+                        <i class="flaticon-checkbox"></i>
+                        Amet consectetur adipisicing elit Officia.
+                      </li>
+                      <li>
+                        <i class="flaticon-checkbox"></i>
+                        Aquaerat ipsa quis possimus.
+                      </li>
+                    </ul>
+                    <p>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua at vero amet dolor
+                      sit consect.
+                    </p>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur
+                      <strong>adipisicing</strong> elit, sed do eiusmod tempor
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in <a href="index.html">sed</a> uia non
+                      numquam eius modi tempora incidunt ut labore dolor.
+                    </p> -->
+                </div>
+              </article>
+              <div class="post-author">
+                <div class="post-author-img">
+                  <img src="assets/img/blog/my pic.jpg" alt="Image" />
+                </div>
+                <div class="post-author-info">
+                  <h4>E Pabitra</h4>
+                  <p>
+                    I am a highly organized and self driven software developer
+                    with a specialists understanding of various programming
+                    principles and the software development life...
+                  </p>
+                  <ul class="social-profile style2 list-style">
+                    <li>
+                      <a target="_blank" href="https://www.facebook.com/epabitra3">
+                        <i class="ri-facebook-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://twitter.com/e_pabitra">
+                        <i class="ri-twitter-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://www.linkedin.com/in/epabitra/">
+                        <i class="ri-linkedin-fill"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- Blog Section End -->
-
+      </div>
+      <!-- Blog Details Section End -->
     </div>
     <!-- Content Wrapper End -->
 
@@ -345,14 +433,12 @@
                 </li>
                 <li>
                   <p class="my--menu">
-                    <i class="flaticon-next my--icon"></i>UI
-                    Application
+                    <i class="flaticon-next my--icon"></i>UI Application
                   </p>
                 </li>
                 <li>
                   <p class="my--menu">
-                    <i class="flaticon-next my--icon"></i>Android
-                    Application
+                    <i class="flaticon-next my--icon"></i>Android Application
                   </p>
                 </li>
                 <li>
