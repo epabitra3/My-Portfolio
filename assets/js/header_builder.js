@@ -35,11 +35,12 @@ const headerData = [
       size: "5vh",
     },
     navItems: [
-      { link: "index.html", text: "Home", active: true, hasDropdown: false },
-      { link: "projects.html", text: "Projects", hasDropdown: false },
-      { link: "about.html", text: "About Me", hasDropdown: false },
-      { link: "blog.html", text: "Blog", hasDropdown: false },
-      { link: "contact.html", text: "Contact", hasDropdown: false },
+      { link: "index.html", text: "Home", active: true, hasDropdown: false, extraClass: '', parentClass: '' },
+      { link: "projects.html", text: "Projects", hasDropdown: false, extraClass: '', parentClass: '' },
+      { link: "about.html", text: "About Me", hasDropdown: false, extraClass: '', parentClass: '' },
+      { link: "blog.html", text: "Blog", hasDropdown: false, extraClass: '', parentClass: '' },
+      { link: "contact.html", text: "Contact", hasDropdown: false, extraClass: '', parentClass: '' },
+      { link: "contact.html", text: "Hire me", hasDropdown: false, extraClass: "btn style1", parentClass: "xl-none" },
     ],
     hireMe: { link: "contact.html", text: "Hire Me" },
   },
@@ -152,16 +153,30 @@ function initializeHeader(headerData) {
       navContent.className = "collapse navbar-collapse main-menu-wrap";
       navContent.id = "navbarSupportedContent";
 
+      const menuCloseDiv = document.createElement("div");
+      menuCloseDiv.className = "menu-close xl-none";
+
+      const closeAnchor = document.createElement("a");
+      closeAnchor.href = "javascript:void(0)";
+      closeAnchor.innerHTML = `<i class="ri-close-line"></i>`; 
+
+      menuCloseDiv.appendChild(closeAnchor); 
+      navContent.appendChild(menuCloseDiv);
+
       const navList = document.createElement("ul");
       navList.className = "navbar-nav ms-auto";
 
       section.navItems.forEach((item) => {
         const navItem = document.createElement("li");
         navItem.className = `nav-item ${
+          item.parentClass ? item.parentClass : ""
+        } ${
           item.hasDropdown ? "has-dropdown" : ""
         }`;
         navItem.innerHTML = `<a href="${item.link}" class="nav-link ${
           item.active ? "active" : ""
+        } ${
+          item.extraClass ? item.extraClass : ""
         }">${item.text}</a>`;
         navList.appendChild(navItem);
       });
@@ -178,6 +193,7 @@ function initializeHeader(headerData) {
 
       nav.appendChild(navContent);
       container.appendChild(nav);
+      createMobileBar(container);
       headerBottom.appendChild(container);
 
       headerWrap.appendChild(headerBottom);
@@ -186,4 +202,31 @@ function initializeHeader(headerData) {
 
   const container = document.querySelector(".page-wrapper");
   container.prepend(headerWrap);
+}
+
+function createMobileBar(container) {
+  // Create the wrapper
+  const mobileBarWrap = document.createElement("div");
+  mobileBarWrap.className = "mobile-bar-wrap";
+
+  // Create the mobile sidebar
+  const mobileSidebar = document.createElement("div");
+  mobileSidebar.className = "mobile-sidebar";
+  mobileSidebar.innerHTML = `<i class="ri-menu-4-line"></i>`; // Sidebar icon
+  mobileBarWrap.appendChild(mobileSidebar);
+
+  // Create the mobile menu
+  const mobileMenu = document.createElement("div");
+  mobileMenu.className = "mobile-menu xl-none ms-2";
+
+  const mobileMenuLink = document.createElement("a");
+  mobileMenuLink.href = "javascript:void(0)";
+  mobileMenuLink.innerHTML = `<i class="ri-menu-line"></i>`; // Mobile menu icon
+  mobileMenu.appendChild(mobileMenuLink);
+
+  // Append mobile menu to the wrapper
+  mobileBarWrap.appendChild(mobileMenu);
+
+  // Append the entire mobile bar to the container
+  container.appendChild(mobileBarWrap);
 }
