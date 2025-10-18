@@ -1,4 +1,4 @@
-var main_header_title = "Graduate Trainee Engineer At Vidyayug";
+var main_header_title = "Sinior Software Engineer At Vidyayug";
 var main_header_text = "I'm E Pabitra, a Web Developer Working at Vidyayug Pvt.Ltd";
 var main_header_content = "I Design and Develop Experiences that make people's Lives simple. I break one big impossible task into several small possible tasks.";
 

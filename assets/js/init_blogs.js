@@ -18,7 +18,7 @@ const blogCards = [
         imageURL: "assets/img/blog/lapi2.webp",
         authorName: "E Pabitra",
         date: "4 May, 2023",
-        header: "Started a new position as Graduate Trainee Engineer at Vidyayug Pvt.Ltd",
+        header: "Started a new position as Sinior Software Engineer at Vidyayug Pvt.Ltd",
         blogURL: "javascript:void(0);",
       },
 ];
