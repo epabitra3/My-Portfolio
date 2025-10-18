@@ -1,6 +1,13 @@
 // Sample array of objects
 const blogCards = [
     {
+      imageURL: "assets/img/small_p.png",
+      authorName: "E Pabitra",
+      date: "18 October, 2025",
+      header: "Add to Home Screen with Custom Icons - Complete Implementation Guide",
+      blogURL: "blog-details-add-to-home-screen.html",
+    },
+    {
       imageURL: "assets/img/Uploads/mavenErrorWithEclipseVersionWithDescription.webp",
       authorName: "E Pabitra",
       date: "26 July, 2023",
