@@ -37,6 +37,7 @@ const headerData = [
     navItems: [
       { link: "index.html", text: "Home", active: true, hasDropdown: false, extraClass: '', parentClass: '' },
       { link: "projects.html", text: "Projects", hasDropdown: false, extraClass: '', parentClass: '' },
+      { link: "tools.html", text: "My Tools", hasDropdown: false, extraClass: '', parentClass: '' },
       { link: "about.html", text: "About Me", hasDropdown: false, extraClass: '', parentClass: '' },
       { link: "blog.html", text: "Blog", hasDropdown: false, extraClass: '', parentClass: '' },
       { link: "contact.html", text: "Contact", hasDropdown: false, extraClass: '', parentClass: '' },
