@@ -1,0 +1,49 @@
+/* Journey blog detail – color alignment with theme, no duplicate hero */
+.blog-details-wrap .post-para {
+  text-align: justify;
+}
+
+.blog-details-wrap .post-para .lead {
+  font-size: 1.1rem;
+}
+
+.blog-details-wrap .post-para h3 {
+  color: inherit;
+  font-weight: 600;
+}
+
+.blog-details-wrap .post-para hr {
+  border-color: currentColor;
+  opacity: 0.15;
+}
+
+/* CTA box – motivational message, clear contrast */
+.journey-cta-box {
+  background: linear-gradient(135deg, #0052a3 0%, #0066cc 100%);
+  color: #ffffff;
+  border-left: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+.journey-cta-box p {
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.journey-cta-box strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Dark theme: keep CTA visible */
+[data-theme="dark"] .journey-cta-box,
+.dark-theme .journey-cta-box {
+  background: linear-gradient(135deg, #004080 0%, #0066cc 100%);
+  color: #ffffff;
+}
+
+[data-theme="dark"] .journey-cta-box p,
+[data-theme="dark"] .journey-cta-box strong,
+.dark-theme .journey-cta-box p,
+.dark-theme .journey-cta-box strong {
+  color: #ffffff;
+}

@@ -1,0 +1,11 @@
+/* Import all CSS files - using relative paths from src */
+@import '../assets/css/bootstrap.min.css';
+@import '../assets/css/flaticon.css';
+@import '../assets/css/remixicon.css';
+@import '../assets/css/owl.carousel.min.css';
+@import '../assets/css/odometer.min.css';
+@import '../assets/css/fancybox.css';
+@import '../assets/css/aos.css';
+@import '../assets/css/style.css';
+@import '../assets/css/dark-theme.css';
+@import '../assets/css/responsive.css';

@@ -1,0 +1,83 @@
+/* Blog detail page styles - Add to Home Screen & similar */
+.code-block {
+  background-color: #f4f4f4;
+  border-left: 4px solid #0066cc;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+.code-block pre {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+.step-number {
+  background: #0066cc;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.table-responsive {
+  overflow-x: auto;
+}
+.blog-details-wrap table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+.blog-details-wrap table th,
+.blog-details-wrap table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.blog-details-wrap table th {
+  background-color: #0066cc;
+  color: white;
+}
+.blog-details-wrap table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.highlight-box {
+  background-color: #e8f4f8;
+  border-left: 4px solid #0066cc;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+.icon-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+.checklist-item {
+  padding: 10px;
+  margin: 5px 0;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+.checklist-item::before {
+  content: "✅ ";
+  margin-right: 10px;
+}
+.warning-box {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+}

@@ -1,0 +1,631 @@
+/* LinkedIn Post Generator Styles */
+.post-editor-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.editor-wrapper {
+  background: var(--white-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  background: #f8f9fa;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 5px;
+  padding-right: 15px;
+  border-right: 1px solid #dee2e6;
+}
+
+.toolbar-group:last-child {
+  border-right: none;
+}
+
+.toolbar-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #495057;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar-btn:hover {
+  background: #e9ecef;
+  color: #0077b5;
+}
+
+.toolbar-btn.active {
+  background: #0077b5;
+  color: white;
+}
+
+.editor-textarea {
+  width: 100%;
+  height: 500px;
+  max-height: 500px;
+  min-height: 500px;
+  padding: 20px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.6;
+  resize: vertical;
+  overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.editor-textarea:focus {
+  outline: none;
+}
+
+.editor-textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.editor-textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.editor-textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.editor-textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.preview-section {
+  height: 100%;
+}
+
+.preview-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+/* LinkedIn Preview Card Styles */
+.linkedin-preview-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.08);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.linkedin-post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 16px;
+}
+
+.linkedin-profile {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+}
+
+.linkedin-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #666;
+  font-size: 24px;
+}
+
+.linkedin-profile-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.linkedin-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.linkedin-title {
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.linkedin-time {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.linkedin-dot {
+  font-size: 8px;
+}
+
+.linkedin-more-options {
+  color: #666666;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.linkedin-more-options:hover {
+  background: #f3f2ef;
+}
+
+.linkedin-post-content {
+  padding: 0 16px 12px;
+  position: relative;
+}
+
+.preview-content {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 70px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.preview-content.collapsed {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.preview-content.expanded {
+  max-height: none;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.preview-placeholder {
+  color: #999999;
+  font-style: italic;
+  margin: 0;
+}
+
+.linkedin-show-more {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  padding: 4px 0;
+  display: inline-block;
+}
+
+.linkedin-show-more:hover {
+  color: #0077b5;
+  text-decoration: underline;
+}
+
+.linkedin-post-footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 8px 16px;
+}
+
+.linkedin-engagement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.linkedin-reactions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.linkedin-reaction-icon {
+  font-size: 16px;
+}
+
+.linkedin-comments-shares {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.linkedin-separator {
+  color: #999999;
+}
+
+.linkedin-actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px 0;
+}
+
+.linkedin-action-btn {
+  background: none;
+  border: none;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  flex: 1;
+  justify-content: center;
+}
+
+.linkedin-action-btn:hover {
+  background: #f3f2ef;
+  color: #0077b5;
+}
+
+.linkedin-action-btn i {
+  font-size: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn-copy, .btn-clear {
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-copy {
+  background: #0077b5;
+  color: white;
+}
+
+.btn-copy:hover {
+  background: #005885;
+}
+
+.btn-clear {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-clear:hover {
+  background: #5a6268;
+}
+
+.char-counter {
+  text-align: right;
+  padding: 10px 20px;
+  color: #6c757d;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.char-counter.warning {
+  color: #ffc107;
+}
+
+.char-counter.danger {
+  color: #dc3545;
+}
+
+.emoji-picker-container {
+  position: relative;
+}
+
+.emoji-picker {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  max-width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.emoji-picker.show {
+  display: block;
+}
+
+.emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 5px;
+}
+
+.emoji-item {
+  font-size: 24px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.emoji-item:hover {
+  background: #f0f0f0;
+}
+
+.icon-picker-container {
+  position: relative;
+}
+
+.icon-picker {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  max-width: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.icon-picker.show {
+  display: block;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.icon-item {
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  transition: background 0.2s;
+  border: 1px solid #e9ecef;
+}
+
+.icon-item:hover {
+  background: #f0f0f0;
+  border-color: #0077b5;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #28a745;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  animation: slideIn 0.3s ease;
+}
+
+.toast.show {
+  display: block;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.format-help {
+  background: #e7f3ff;
+  border-left: 4px solid #0077b5;
+  padding: 15px;
+  border-radius: 4px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.format-help::-webkit-scrollbar {
+  width: 8px;
+}
+
+.format-help::-webkit-scrollbar-track {
+  background: #d0e7ff;
+  border-radius: 4px;
+}
+
+.format-help::-webkit-scrollbar-thumb {
+  background: #0077b5;
+  border-radius: 4px;
+}
+
+.format-help::-webkit-scrollbar-thumb:hover {
+  background: #005885;
+}
+
+.format-help h4 {
+  margin-bottom: 10px;
+  color: #0077b5;
+  font-size: 16px;
+  position: sticky;
+  top: 0;
+  background: #e7f3ff;
+  padding-bottom: 5px;
+  z-index: 1;
+}
+
+.format-help ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.format-help li {
+  margin-bottom: 8px;
+  color: #495057;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .preview-section {
+    margin-top: 30px;
+  }
+  
+  .linkedin-preview-card {
+    max-width: 100%;
+  }
+  
+  .editor-textarea {
+    height: 400px;
+    max-height: 400px;
+    min-height: 400px;
+  }
+  
+  .format-help {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 575px) {
+  .editor-textarea {
+    height: 350px;
+    max-height: 350px;
+    min-height: 350px;
+  }
+  
+  .format-help {
+    max-height: 250px;
+  }
+  
+  .preview-content {
+    max-height: 60px;
+  }
+  
+  .preview-content.collapsed {
+    font-size: 11px;
+  }
+}
+
+/* Dark Theme Support */
+.theme-dark .editor-wrapper {
+  background: var(--dark-bg-color, #1a1a1a);
+}
+
+.theme-dark .toolbar {
+  background: #2d2d2d;
+  border-bottom-color: #404040;
+}
+
+.theme-dark .linkedin-preview-card {
+  background: #1a1a1a;
+  border-color: #404040;
+}
+
+.theme-dark .preview-content {
+  color: #ffffff;
+}
+
+.theme-dark .linkedin-name {
+  color: #ffffff;
+}
+
+.theme-dark .linkedin-title,
+.theme-dark .linkedin-time,
+.theme-dark .linkedin-comments-shares {
+  color: #cccccc;
+}
+
+.theme-dark .linkedin-post-footer {
+  border-top-color: #404040;
+}
+
+.theme-dark .linkedin-engagement {
+  border-bottom-color: #404040;
+}
+
+.theme-dark .linkedin-action-btn {
+  color: #cccccc;
+}
+
+.theme-dark .linkedin-action-btn:hover {
+  background: #2d2d2d;
+  color: #0077b5;
+}
+
+.theme-dark .format-help {
+  background: #2d3a4a;
+  border-left-color: #0077b5;
+}
+
+.theme-dark .emoji-picker,
+.theme-dark .icon-picker {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+.theme-dark .editor-textarea {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.theme-dark .editor-textarea::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.theme-dark .editor-textarea::-webkit-scrollbar-thumb {
+  background: #555;
+}
