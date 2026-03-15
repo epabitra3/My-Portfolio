@@ -19,11 +19,25 @@ export const main_header_content = "I Design and Develop Experiences that make p
 
 export const latestProjects = [
   {
-    gitHubLink: "https://github.com/epabitra/PortfolioWebsite.git",
-    projName: "Portfolio Website",
-    projType: "Web Development",
-    description: "A personal portfolio showcasing my projects, skills, and experiences. Explore my journey and connect with me through this site.",
+    gitHubLink: "#",
+    projName: "HeartThrive – Cardiovascular Risk Monitoring Platform",
+    projType: "Backend / Microservices",
+    description: "Backend for cardiovascular risk monitoring with real-time alerting and prescription workflow. Java 17, Spring Boot, MySQL, AWS S3.",
     imageURL: "img/Uploads/portfolio_ss.png"
+  },
+  {
+    gitHubLink: "#",
+    projName: "Learning Management Platform",
+    projType: "Backend / Microservices",
+    description: "Backend supporting 5,000 concurrent users for course delivery, grading, and analytics. Java, Spring Boot, PostgreSQL, gRPC, Docker.",
+    imageURL: "img/blog/MVC Blog.png"
+  },
+  {
+    gitHubLink: "#",
+    projName: "Pharmaceutical Workflow Automation System",
+    projType: "Backend / Microservices",
+    description: "Workflow platform automating regulatory approval pipelines with audit logging. Java, Spring Boot, MySQL, Spring Security, Docker.",
+    imageURL: "img/Uploads/axis_banner.png"
   },
   {
     gitHubLink: "https://github.com/epabitra/OnlineShoppingApp.git",
@@ -40,25 +54,89 @@ export const latestProjects = [
     imageURL: "img/Uploads/axis_banner.png"
   },
   {
-    gitHubLink: "https://www.digitektechnologies.com",
-    projName: "Digitek Technologies",
-    projType: "Wordpress Application",
-    description: "It is a e-Learning platform. I developed this application using Wordpress. Using this platform, you will be able to learn how to code.",
-    imageURL: "img/Uploads/digitek_ss.png"
-  },
-  {
     gitHubLink: "https://github.com/epabitra/Employee_Management_Mysql.git",
     projName: "Employee Management System",
     projType: "Java Application",
     description: "It is a web application used to demonstrate the Employee Management System. You can find the description on GitHub.",
     imageURL: "img/blog/MVC Blog.png"
+  }
+]
+
+// Full projects list for Projects page only (with categories for tabs). Home uses latestProjects.
+export const PROJECT_CATEGORIES = { OFFICE: 'office', PERSONAL: 'personal', LEARNING: 'learning' }
+
+export const allProjects = [
+  {
+    category: 'office',
+    gitHubLink: '#',
+    projName: 'HeartThrive – Cardiovascular Risk Monitoring Platform',
+    projType: 'Backend / Microservices',
+    description: 'Backend for cardiovascular risk monitoring with real-time alerting and prescription workflow. Java 17, Spring Boot, MySQL, AWS S3.',
+    imageURL: 'img/Uploads/portfolio_ss.png'
   },
   {
-    gitHubLink: "https://github.com/epabitra/HK-Payments-Bank.git",
-    projName: "HK Payments Bank",
-    projType: "Android Application",
-    description: "It is a Android application used to demonstrate the Banking Application. You can find the description on GitHub.",
-    imageURL: "img/Uploads/hk_bank_ss.png"
+    category: 'office',
+    gitHubLink: '#',
+    projName: 'Learning Management Platform',
+    projType: 'Backend / Microservices',
+    description: 'Backend supporting 5,000 concurrent users for course delivery, grading, and analytics. Java, Spring Boot, PostgreSQL, gRPC, Docker.',
+    imageURL: 'img/blog/MVC Blog.png'
+  },
+  {
+    category: 'office',
+    gitHubLink: '#',
+    projName: 'Pharmaceutical Workflow Automation System',
+    projType: 'Backend / Microservices',
+    description: 'Workflow platform automating regulatory approval pipelines with audit logging. Java, Spring Boot, MySQL, Spring Security, Docker.',
+    imageURL: 'img/Uploads/axis_banner.png'
+  },
+  {
+    category: 'personal',
+    gitHubLink: 'https://github.com/epabitra/OnlineShoppingApp.git',
+    projName: 'Online Shopping Application',
+    projType: 'Java Application',
+    description: 'It is a web application used to demonstrate some functionality of Online Shopping Application Development. You can find the description on GitHub.',
+    imageURL: 'img/blog/MVC Blog.png'
+  },
+  {
+    category: 'personal',
+    gitHubLink: 'https://github.com/epabitra/Axis-Bank.git',
+    projName: 'Axis Banking Application',
+    projType: 'Java Application',
+    description: 'It is a web application used to demonstrate some functionality of Banking Application Development. You can find the description on GitHub.',
+    imageURL: 'img/Uploads/axis_banner.png'
+  },
+  {
+    category: 'personal',
+    gitHubLink: 'https://github.com/epabitra/Employee_Management_Mysql.git',
+    projName: 'Employee Management System',
+    projType: 'Java Application',
+    description: 'It is a web application used to demonstrate the Employee Management System. You can find the description on GitHub.',
+    imageURL: 'img/blog/MVC Blog.png'
+  },
+  {
+    category: 'personal',
+    gitHubLink: 'https://github.com/epabitra/HK-Payments-Bank.git',
+    projName: 'HK Payments Bank',
+    projType: 'Android Application',
+    description: 'It is a Android application used to demonstrate the Banking Application. You can find the description on GitHub.',
+    imageURL: 'img/Uploads/hk_bank_ss.png'
+  },
+  {
+    category: 'personal',
+    gitHubLink: 'https://github.com/epabitra/PortfolioWebsite.git',
+    projName: 'Portfolio Website',
+    projType: 'Web Development',
+    description: 'A personal portfolio showcasing my projects, skills, and experiences. Explore my journey and connect with me through this site.',
+    imageURL: 'img/Uploads/portfolio_ss.png'
+  },
+  {
+    category: 'personal',
+    gitHubLink: 'https://www.digitektechnologies.com',
+    projName: 'Digitek Technologies',
+    projType: 'Wordpress Application',
+    description: 'It is a e-Learning platform. I developed this application using Wordpress. Using this platform, you will be able to learn how to code.',
+    imageURL: 'img/Uploads/digitek_ss.png'
   }
 ]
 

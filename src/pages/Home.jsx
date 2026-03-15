@@ -115,11 +115,10 @@ const Home = () => {
                         alt="Image"
                       />
                     </span>
-                    <h3>Programming Skills</h3>
+                    <h3>Backend Skills</h3>
                   </div>
                   <p>
-                    I am proficient with different technologies of
-                    <b> JAVA</b> (Core Java, JDBC, Servlet, JSP)
+                    I build scalable backend systems using <b>Java</b>, <b>Spring Boot</b>, <b>Spring Security</b>, <b>REST APIs</b>, <b>Microservices</b>, <b>Hibernate</b>, <b>JPA</b>, <b>gRPC</b>, and <b>SQL</b>.
                   </p>
                 </div>
               </div>
@@ -134,11 +133,10 @@ const Home = () => {
                         alt="Image"
                       />
                     </span>
-                    <h3>UI Skills</h3>
+                    <h3>Frontend Skills</h3>
                   </div>
                   <p>
-                    In UI development i have a good knowledge on
-                    <b> HTML, CSS, Javascript, Bootstrap</b>
+                    For UI development I work with <b>React.js</b>, <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.
                   </p>
                 </div>
               </div>
@@ -153,11 +151,10 @@ const Home = () => {
                         alt="Image"
                       />
                     </span>
-                    <h3>Frameworks</h3>
+                    <h3>Deployment Skills</h3>
                   </div>
                   <p>
-                    For Bussiness logic development i have knowlege on
-                    <b> Spring Boot</b>
+                    I use <b>AWS</b> (S3, EC2, IAM), <b>Docker</b>, and <b>CI/CD pipelines</b> for deployment and infrastructure.
                   </p>
                 </div>
               </div>
@@ -189,12 +186,9 @@ const Home = () => {
               <div className="wh-content">
                 <div className="content-title style1">
                   <span>Why Should You Hire Me</span>
-                  <h2>Get World Class &amp; Fastest Application Development</h2>
+                  <h2>Scalable Backend Systems &amp; High-Availability Solutions</h2>
                   <p>
-                    I am a &nbsp;highly &nbsp;organized&nbsp; and &nbsp;self
-                    driven &nbsp;software developer with a specialists
-                    understanding of various programming principles and the
-                    software development life...
+                    I am a highly organized and self-driven Backend Engineer with 2+ years of experience building production-grade systems using Java, Spring Boot, and microservices. I focus on high-throughput APIs, performance optimization, and maintaining system reliability.
                   </p>
                 </div>
                 <div className="feature-item-wrap">
@@ -205,9 +199,7 @@ const Home = () => {
                     <div className="feature-text">
                       <h3>Work Experience</h3>
                       <p>
-                        The last 6 months of my experience are devoted to
-                        software development as a Java Developer at Digitek
-                        Technologies.
+                        Software Engineer at Vidyayug Software Pvt Ltd since May 2023. I ship production APIs, migrate legacy systems to microservices, and maintain 99.5%+ availability for platforms serving 10,000+ daily users.
                       </p>
                     </div>
                   </div>
@@ -218,9 +210,7 @@ const Home = () => {
                     <div className="feature-text">
                       <h3>Projects</h3>
                       <p>
-                        As a software developer, I have developed over 5000
-                        programs and have completed over 15 paid and non-paid
-                        Projects.
+                        Delivered 15+ production APIs, migrated 5 legacy monoliths to microservices, and architected custom async messaging (DLQ + retry). Built systems for LMS, healthcare, and pharmaceutical workflow automation.
                       </p>
                     </div>
                   </div>
@@ -229,11 +219,9 @@ const Home = () => {
                       <i className="flaticon-computer"></i>
                     </span>
                     <div className="feature-text">
-                      <h3>Live Support</h3>
+                      <h3>Dedicated Delivery</h3>
                       <p>
-                        My clients connect me 24/7, I will take a very minimal
-                        time to serve your problems with a proper and dedicated
-                        manner.
+                        I respond quickly and work with a dedicated approach to solve problems, debug production issues, and deliver reliable solutions on time.
                       </p>
                     </div>
                   </div>
@@ -270,9 +258,13 @@ const Home = () => {
                   </span>
                   <div className="service-info">
                     <h3>
-                      <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
-                        {project.projName}
-                      </a>
+                      {project.gitHubLink && project.gitHubLink !== '#' ? (
+                        <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
+                          {project.projName}
+                        </a>
+                      ) : (
+                        <span className="text-white">{project.projName}</span>
+                      )}
                     </h3>
                     <p>
                       <b>{project.projType}</b>
