@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Breadcrumb from '../components/Breadcrumb'
 import { toolsData } from '../data/constants'
 import { initializeAOS } from '../utils/loadScripts'
+import './Tools.css'
 
 const Tools = () => {
   useEffect(() => {
@@ -35,7 +36,7 @@ const Tools = () => {
                 <div className="blog-card style1 tool-card">
                   <div className="blog-info">
                     <div className="text-center">
-                      <div className="tool-icon">
+                      <div className={`tool-icon ${tool.icon && tool.icon.includes('linkedin') ? 'tool-icon-linkedin' : ''}`}>
                         <i className={tool.icon}></i>
                       </div>
                       {tool.badge && <span className="tool-badge">{tool.badge}</span>}

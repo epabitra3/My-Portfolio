@@ -1,0 +1,28 @@
+/* Tools page – LinkedIn logo brand colors */
+.tool-icon-linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: #0a66c2 !important;
+  color: #fff !important;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+
+.tool-icon-linkedin i {
+  color: #fff !important;
+}
+
+/* Ensure it stays correct in dark theme */
+.theme-dark .tool-icon-linkedin,
+[data-theme="dark"] .tool-icon-linkedin {
+  background-color: #0a66c2 !important;
+  color: #fff !important;
+}
+
+.theme-dark .tool-icon-linkedin i,
+[data-theme="dark"] .tool-icon-linkedin i {
+  color: #fff !important;
+}

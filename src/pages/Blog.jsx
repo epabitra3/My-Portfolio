@@ -60,18 +60,6 @@ const Blog = () => {
               </div>
             ))}
           </div>
-          {/* Bottom hero / author section - matches earlier design */}
-          <div className="row justify-content-center mt-5">
-            <div className="col-xl-8 col-lg-10">
-              <div className="text-center">
-                <img
-                  src={img('img/blog/my pic.jpg')}
-                  alt="E Pabitra - Portfolio"
-                  style={{ width: '100%', maxWidth: '800px', height: 'auto', borderRadius: '8px', objectFit: 'cover' }}
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>

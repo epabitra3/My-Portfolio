@@ -117,7 +117,7 @@ export const toolsData = [
     description: "Create professional LinkedIn posts with advanced formatting options including bold, italic, emojis, icons, hashtags, mentions, and more. Perfect for creating engaging content that stands out.",
     icon: "ri-linkedin-box-fill",
     link: "/linkedin-post-generator.html",
-    badge: "New",
+    badge: "",
     features: [
       "Bold & Italic formatting",
       "Emoji picker",
