@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://epabitra.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://epabitra.com/about.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://epabitra.com/projects.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://epabitra.com/blog.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://epabitra.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://epabitra.com/tools.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://epabitra.com/linkedin-post-generator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://epabitra.com/blog-details-add-to-home-screen.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://epabitra.com/blog-details-maven-issue-with-eclipse.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://epabitra.com/blog-details-mvc-webapp.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://epabitra.com/blog-details-journey-3lpa-to-8lpa.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>

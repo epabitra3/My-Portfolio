@@ -1,3 +1,8 @@
+// SEO & site identity
+export const siteUrl = "https://epabitra.com"
+export const siteName = "E Pabitra - Portfolio"
+export const defaultOgImage = "/assets/img/small_p.png"
+
 export const name_ = "E Pabitra"
 export const email_ = "epabitra9@gmail.com"
 export const alt_email_ = "epabitra8@gmail.com"

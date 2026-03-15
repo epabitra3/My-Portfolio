@@ -1,0 +1,5 @@
+# https://epabitra.com
+User-agent: *
+Allow: /
+
+Sitemap: https://epabitra.com/sitemap.xml

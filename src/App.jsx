@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import { ThemeProvider } from './contexts/ThemeContext'
 import Layout from './components/Layout'
 import Home from './pages/Home'
@@ -18,9 +19,10 @@ import Maintenance from './pages/Maintenance'
 
 function App() {
   return (
-    <ThemeProvider>
-      <Router>
-        <Layout>
+    <HelmetProvider>
+      <ThemeProvider>
+        <Router>
+          <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about.html" element={<About />} />
@@ -37,9 +39,10 @@ function App() {
             <Route path="/callback.html" element={<Callback />} />
             <Route path="/Maintanance.html" element={<Maintenance />} />
           </Routes>
-        </Layout>
-      </Router>
-    </ThemeProvider>
+          </Layout>
+        </Router>
+      </ThemeProvider>
+    </HelmetProvider>
   )
 }
 

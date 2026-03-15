@@ -4,6 +4,7 @@ import ThemeSwitcher from './ThemeSwitcher'
 import Header from './Header'
 import Footer from './Footer'
 import BackToTop from './BackToTop'
+import SEO from './SEO'
 
 const Layout = ({ children }) => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <SEO />
       <Preloader />
       <ThemeSwitcher />
       <div className="page-wrapper">
